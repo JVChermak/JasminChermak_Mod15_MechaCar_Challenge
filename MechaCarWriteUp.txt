@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww12320\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\f1\b\fs28 Multiple Linear Regression: MPG Regression
+\f0\b0\fs24 \
+I compared mpg to vehicle length, vehicle weight, spoiler angle, and ground clearance to see which could provide a non-random amount of variance. AWD could not be included in the analysis because it is dichotomous data, and therefore not suitable for a linear regression.\
+Multiple R-squared = 0.7032 which suggests a strong positive correlation. p-value = 2.277e-11, which is much smaller than the significance level of 0.05, so there is sufficient evidence to reject the null hypothesis and state that the slope of the line is not zero. The regression equation becomes y = 6.24*vehicle length + .001277*vehicle weight + .08031*spoiler angle + 3.659*ground clearance - 0.0176.\
+According to individual Pr(>|t|) values, the variables that provide a non-random amount of variance from least to greatest are vehicle weight (0.0728) and spoiler angle (0.2339).\
+The r-squared value suggests that this multiple linear regression has a strong positive correlation, but it is not possible to visualize this due to so many independent variables. The Pr(>|t|) value of the intercept is extremely low, which suggests that there are no outside factors that aren\'92t included in the data. All of these results suggest that the multiple linear regression would predict the mpg of MechaCar prototypes effectively.\
+\
+
+\f1\b\fs28 Suspension Coil Manufacturing
+\f0\b0\fs24 \
+The summary table shows that the suspension coils manufactured in Lot 1 and Lot 2 are being built to the correct specifications. The mean and median at both lots are 1500, or very close to it. While the variance and standard deviation for Lot 2 are greater than Lot 1, both are within the design specifications. Although the mean and median PSI for Lot 3 is close to 1500psi, the variance is 170.3 which is over the design specifications for the MechaCar.\
+\
+Using the one-sample t-test with a significance value of 0.05, the PSI for Lot 1 has a p-value of 1, which means that we do not have sufficient evidence to reject the null hypothesis and that the mean of the PSI for Lot 1 is statistically similar to the population mean. Lot 2 has a p-value of 0.6072, which also shows that the mean of the PSI for Lot 2 is statistically similar to the population mean. Lot 3 has a p-value of 0.04168, which is below our significance value of 0.05. This means that the PSI for Lot 3 is statistically different.\
+\
+
+\f1\b\fs28 Performance Comparison
+\f0\b0\fs24 \
+Some of the top considerations when buying a new car are cost, reliability, fuel economy and safety. Consumers want to know that they are getting value for their dollars, while also purchasing a car that is environmentally friendly and safe for their families. The following data and tests should be used to compare the MechaCar with other comparable vehicles.\
+To analyze the concern about cost, we should ask \'93Is the cost of the MechaCar reasonable when looking at comparable vehicles?\'94 We would need to gather the costs of the MechaCar and comparable vehicles from at least 4 different manufacturers. To answer this, a one-way ANOVA test would be performed. The null hypothesis is that means of the costs are equal. The alternate hypothesis is that the mean cost of at least one vehicle is different from the other vehicles. \
+To analyze the concern about reliability, we should ask \'93Is the MechaCar as reliable as other comparable vehicles?\'94 We would need to gather the Consumer Reports reliability scores of the MechaCar and comparable vehicles from at least 4 different manufacturers. To answer this, a one-way ANOVA test would be performed. The null hypothesis is that the means of the reliability scores will be equal. The alternate hypothesis is that the reliability score of at least one vehicle will be different.\
+To analyze the concern about fuel economy, we should ask \'93Is the average mpg of the MechaCar similar to the average mpg of comparable vehicles?\'94 We would need to gather the city and highway mpg from the MechaCar and comparable vehicles from at least 4 different manufacturers. To answer this question, a one-way ANOVA test would be performed. The null hypothesis is that the mean city and highway mpg of the groups are all equal. The alternate hypothesis is that at least one of the means is different from the other vehicles.\
+In each instance of the ANOVA tests, if a difference is determined, then individual two-sample t-tests could be performed between the MechaCar and one comparable vehicle at a time to determine where the difference lies.\
+To analyze the concern about safety, we should ask \'93Is the safety rating of the MechaCar as high as other comparable vehicles?\'94 The safety ratings of comparable vehicles will need to be collected from at least 4 manufacturers for the front, side and rear collisions. Because safety is usually measured by a 5-star system, a chi-squared test with vehicle as the independent categorical variable and safety rating of front, side and rear as the dependent categorical variables would then be performed. The null hypothesis is that there is no difference in frequency distributions between the groups. The alternate hypothesis is that there is a difference in frequency distributions between the groups.}
